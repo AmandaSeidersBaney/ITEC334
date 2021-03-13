@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <!--
-*************************************************************************************************************
+*********************************************************************************************************
 * Description: Index page for Baney Cycles
 * Author: Amanda Seiders-Baney
 * Date Developed: January 24, 2021
-* Date of Most Recent Edit: February 20, 2021
-* Date Tested: February 20, 2021
-* Tested on Chrome, Firefox, and Edge
-**************************************************************************************************************
+* Date of Most Recent Edit: March 12, 2021
+* Date Tested: March 12, 2021
+* Tested on Chrome, Firefox, Edge, Android and iPhone
+*********************************************************************************************************
 -->
-
+<!--
+********************************************************************************************************** HEADER
+*********************************************************************************************************
+-->
 <head>
-    <!--Header information-->
     <meta charset="utf-8">
     <meta name="description" content="Baney Cycles in Carbondale, IL. Supplying cycling needs for all.">
     <meta name="keywords" content="bicycles, kids bikes, adult bikes, tandem, Carbondale, bikes">
-    <link rel="stylesheet" href="css/main.css">
+<!-- 
+**********************************************************************************************************VIEWPORT FOR RESPONSIVE
+*********************************************************************************************************-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baney Cycles | Carbondale, IL</title>
-    <nav id="nav_menu">
-        <ul>
-             <li><a href="index.html">Home</a></li>
-            <li><a href="rental.html">Rental</a></li>
-            <li><a href="sales.html">Sales</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!--
+********************************************************************************************************** STYLESHEETS
+*********************************************************************************************************-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<!--
+********************************************************************************************************** FAVICON
+*********************************************************************************************************
+-->
+    <link rel="shortcut icon" type="image/png" href="graphics/favicon.ico">
 </head>
 
 <body>
-    <!--Body-->
+<!--
+********************************************************************************************************** NAVIGATION
+*********************************************************************************************************
+-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul id="menu">
+            <li><a href="index.htm">HOME</a></li>
+            <li><a href="rental.htm">RENTAL</a></li>            
+            <li><a href="sales.htm">SALES</a></li>           
+            <li><a href="service.htm">SERVICES</a></li>           
+            <li><a href="contact.htm">CONTACT</a></li>          
+            </ul></nav>
     <h1>Baney Cycles</h1>
-    <!--First Heading-->
-
     <h2>Welcome to <i>Baney Cycles</i> located in Carbondale, IL, where cycling and the natural beauty of Southern Illinois merge.</h2>
-    <!--Second Heading-->
-    <div class="image">
-        <img id="mib" src="https://amandaseidersbaney.github.io/ITEC336/graphics/cycling.jpg" alt="cycling">
+<!--
+********************************************************************************************************** OVERLAY IMAGE
+*********************************************************************************************************
+-->
+    <div class="container">
+        <img id="mib" src="https://amandaseidersbaney.github.io/ITEC336/graphics/cycling.jpg" alt="cycling" >
+    <div class="overlay">
+            <img id="ro" src="https://amandaseidersbaney.github.io/ITEC336/graphics/tandem.jpg">
+        </div>
     </div>
-
+   <br>
     <p>Located in downtown Carbondale, we carry several models of bikes, gear, and equipment for all ages and all of your cycling adventures. If we do not have what you need in stock, we will gladly order it.</p>
     <!--Models in stock-->
     <p>Adult:</p>
@@ -57,18 +81,34 @@
         <li> Standard Tandem - <em>starting at $200.00</em></li>
         <li> Radio Flyer Tricycle - <em>starting at $35.00</em></li>
     </ul>
-
+<!--
+********************************************************************************************************** FOOTER
+*********************************************************************************************************
+-->
     <footer>
-        <!--contact information-->
-        <p> Baney Cycles<br>
-            1223 Main St<br>
-            Carbondale, IL 62901<br>
-            866-SIU-BIKE | 618-SIU-BIKE<br>
-            <a href="www.siu.edu">Baney Cycles</a>
-        </p>
-    </footer>
+    Baney Cycles<br>
+    1223 Main St<br>
+    Carbondale, IL 62901<br>
+    866-SIU-BIKE | 618-SIU-BIKE<br>
+        <a href="www.siu.edu">Baney Cycles</a></footer>
+<!--
+********************************************************************************************************** RESPONSIVE SCRIPTING
+*********************************************************************************************************
+-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="dist/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu').slicknav();
+        });
+        </script>
+<!--
+********************************************************************************************************** AUDIO
+*********************************************************************************************************
+-->
+    <audio id="audioplayer" controls autoplay loop>
+    <source src="media/music.mp3">
+    </audio>
+    
 </body>
-
-
 </html>
-
