@@ -13,24 +13,24 @@
 * Tablet/Desktop 
 ********************************************************************************************************/
 @media screen and (max-width: 960px) {
-    .slicknav_menu {
-        display: none;
+    .js #menu {
+        display:none;
     }
 
-    #nav_menu {
-        display: block;
+    .js .slicknav_menu {
+        display:block;
     }
 }
 /********************************************************************************************************
 * Smartphones/Surface Pro
 ********************************************************************************************************/
 @media screen and (max-width: 768px) {
-    .slicknav_menu {
-        display: none;
+    .js #menu {
+        display:none;
     }
 
-    #nav_menu {
-        display: block;
+    .js .slicknav_menu {
+        display:block;
     }
 }
 
@@ -38,11 +38,12 @@
 * 
 ********************************************************************************************************/
 @media screen and (max-width: 667px)  {
-    .slicknav_menu {
-        display: block;
+    .js #menu {
+        display:block;
     }
-    #nav_menu {
-        display: none;
+
+    .js .slicknav_menu {
+        display:none;
     }
 }
 /********************************************************************************************************
