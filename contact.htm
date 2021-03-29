@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--
+    This document displays the home page for Baney Bicycles.
+-->
+<html lang="en-US">
+<head>  
+    <meta charset="utf-8">
+    <meta name="description" content="An American company working to reestablish bicycles as a part of the American lifestyle.">
+    <meta name="keywords" content="bicycles, American made, American lifestyle, bikes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baney Bicycles | Custom Made Bicycles</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+    <nav id="mobile_menu"></nav><!--Navigation Menu-->
+    <nav id="nav_menu">
+            <ul id="menu">
+                <li><a href="index.htm">HOME</a></li>
+                <li><a href="rental.htm">RENTAL</a></li>
+                <li><a href="sales.htm">SALES</a></li>
+                <li><a href="services.htm">SERVICES</a></li>
+                <li><a href="contact.htm">CONTACT</a></li>
+            </ul>
+    </nav>
+    <h1>Baney Bicycles</h1>
+     <div class="container">
+        <img id="mib" src="https://amandaseidersbaney.github.io/ITEC336/graphics/cycling.jpg" alt="cycling" >
+    <div class="overlay">
+            <img id="ro" src="https://amandaseidersbaney.github.io/ITEC336/graphics/tandem.jpg">
+        </div>
+    </div>
+   <br>
+    <figure>
+            <figcaption>Let's have Fun!!</figcaption>
+    </figure>
+   <h2>Contact Us</h2>
+<p>Have a question, need to make an order, or simply want to tell us "Hi!" - We want to hear from you.</p>
+
+<div class="container">
+  <form action="/action.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Full Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="fullname" placeholder="Your full name.." minlength="15" maxlength="25" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="address">Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="address" name="address" placeholder="Your address.." minlength="15" maxlength="50" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="city">City</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="city" name="city" placeholder="Your city.." minlength="4" maxlength="25" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="state">State</label>
+    </div>
+    <div class="col-75">
+      <select id="state" name="state" required>
+
+        <option value="California">California</option>
+        <option value="Florida">Florida</option> 
+       <option value="Idaho">Idaho</option>
+        <option value="Illinois">Illinois</option>
+                <option value="Kentucky">Kentucky</option>
+        <option value="Pennsylvania">Pennsylvania</option>          
+          <option value="Tennessee">Tennessee</option>           
+            <option value="Texas">Texas</option> 
+             <option value="Wyoming">Wyoming</option>            
+      </select>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="zipcode">Zipcode</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="zipcode" name="zipcode" placeholder="Your zipcode.." minlength="5" maxlength="10" pattern="99999" pattern="99999-9999" required>
+    </div>
+  </div>  
+  <div class="row">
+    <div class="col-25">
+      <label for="phone">Phone</label>
+    </div>
+    <div class="col-75">
+      <input type="tel" id="phone" name="phone" placeholder="Your phone number.." minlength="10" maxlength="12" pattern="999-999-9999" required>
+    </div>
+  </div>  
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="email" id="email" name="email" placeholder="Your email address.." minlength="10" maxlength="25" type="email">
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="date">Date</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="date" name="date" placeholder="Today's date.." required>
+    </div>
+  </div>
+  <form action="/action_page.php" required>
+  <input type="checkbox" id="sales" name="sales" value="sales">
+  <label for="vehicle1"> Sales </label><br>
+  <input type="checkbox" id="Service" name="Service" value="Service">
+  <label for="vehicle2"> Service </label><br>
+  <input type="checkbox" id="rental" name="rental" value="rental">
+  <label for="vehicle3">Rental</label><br><br>
+
+</form>
+  <p>Please select your preferred bike:</p>
+  <input type="radio" id="bike1" name="Mountain" value="Mountain">
+  <label for="bike1">Mountain</label><br>
+  <input type="radio" id="bike2" name="Cruiser" value="Cruiser">
+  <label for="bike2">Cruiser</label><br>
+  <input type="radio" id="bike3" name="Huffy" value="Huffy">
+     <label for="bike3">Huffy</label><br> 
+</form><br>
+ <div class="row">
+    <div class="col-25">
+      <label for="Password">Password</label>
+    </div>
+    <div class="col-75">
+      <input type="Password" id="Password" name="Password" placeholder="Please create password.." required>
+    </div>
+  </div>
+  <div class="row"><br>
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" minlength="20" maxlength="200" required></textarea>
+    </div>
+  </div>
+  <div class="row">
+       <a href="Response.htm">
+      <input type="submit"/>
+     </a>
+     <input type="Reset" value ="Reset">
+  </div>
+ 
+</div>
+
+<footer></footer>   
+<p>Baney Bicycles,
+1223 All American Way,
+Carbondale, IL 62901,
+<a href="www.siu.edu">Baney Bicycles</a></p>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="dist/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+</body>
+</html>
