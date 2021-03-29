@@ -44,6 +44,10 @@
     #nav_menu {
         display: none;
     }
+    table.all{
+        width:auto;
+        grid-row-gap: 5%;
+    }
 }
 /********************************************************************************************************
 *Navigation Menu.
@@ -255,4 +259,62 @@ footer {
     border-style: double;
     border-collapse: collapse;
 
+}
+input[type=submit] {
+  background-color: #6698FF;
+  color: oldlace;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: #885b95;
+}
+input[type=reset] {
+  background-color: #6698FF;
+  color: oldlace;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=reset]:hover {
+  background-color: #885b95;
+}
+.container {
+  border-radius: 5px;
+  background-color: none;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+    
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .col-25, .col-75, input[type=submit], input[type=reset] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
